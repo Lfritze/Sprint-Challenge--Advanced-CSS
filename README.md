@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites use layouts that accomodate multiple devices with specific breakpoints in the design. They layout content with  hard coded pixels and use media queries to accomodate different size screens. They are cheaper to build than fully responsive websites.
+Responsive layouts use the features of fixed, adaptive and fluid websites. They use media queries to constrain responsive units. This makes the viewport expand or shrink thus improving the user's experience. Responsive layouts function seamlessly across almost or all devices sizes.They adapt for any size screen. Instead of hard coded pixels, they use settings such as vw, and vh.  They are more expensive to build in comparison to adaptive sites.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is when the developer's starting point begins at the mobile size first. Meaning, they use min-width media queries to scale the design for larger devices.  Desktop first is when the developer starts from the desktop layout. They use max-width media queries to scale down to smaller devices.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Setting the font to 62.5% in the html tag simply makes the math easier for the developer.  This allows the developer to easily convert rem units by the power of 10 instead of 16. 
+62.5% X 16 =10. Therefore 1 rem equals 10px.
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I would us the parent / child example. The child obeys the parent. You can directly see the parent / child relationship by simply looking at the code and the placement of the brackets.  In principle it is similiar to a file structure or file directory where children are nested underneath the parent. It is easier to follow the relationship when compared to vanilla CSS. It improves workflow and efficiency and  is  similiar to programming in that you can have variables, functions operators, mixins and interpolations. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite part of preprocessing is the use of imports.  This reduces scrolling and allows the developer to select specific files according to their purpose. This makes it easier to keep your place on the page by simply clicking open each file to edit. I know exactly which file to open or close without scrolling or using a search function.  This also makes it easier when creating or using function and mixins.
+I struggle with getting my brackets nested properly. Nesting in general is efficient but I often get mixed up on where to flex or use margin, padding, etc. I just need more practice to get the flow.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
