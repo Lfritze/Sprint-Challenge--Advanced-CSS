@@ -167,14 +167,27 @@ p {
   justify-content: center;
   height: 10rem;
   position: fixed;
-  top: 0;
   width: 100%;
   background-color: #f0f8ff;
   opacity: 0.95;
 }
-h1 {
+.navigation h1 {
   font-size: 4rem;
   text-align: center;
+}
+.navigation nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.navigation nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1.5rem;
+  color: black;
+}
+.navigation nav a:hover {
+  font-weight: bolder;
 }
 footer {
   color: #22283B;
