@@ -58,7 +58,7 @@
 
       .btn {
         width: 30%;
-        .buttonMixin(@header-font-color, 1.5rem, white); /****button mixin*/
+        .buttonmixin(@header-font-color, 1.5rem, white); /****button mixin*/
       }
 
       .btn:hover {
@@ -92,7 +92,6 @@
       }
 
       img {
-        text-align: center;
         width: 100%;
         border-radius: 0.5rem;
       }
@@ -168,7 +167,7 @@
 
         .btn {
           width: 100%;
-          .btn-mixin(@header-font-color, 1.5rem, white);
+          .buttonmixin(@header-font-color, 1.5rem, white);
           padding: 2rem 0.5rem;
         }
 
@@ -210,21 +209,23 @@
       }
   
       .space-images {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
         width: 100%;
   
         img {
           width: 28%;
-          margin: 20px 2.5%;
+          margin: 0 auto;
+          padding: 2%;
           border-radius: 20px;
           height: 100%;
         }
   
         .blast {
           width: 100%;
-          position: center;
+          display: flex;
+          justify-content: center;
         }
   
         .sky {

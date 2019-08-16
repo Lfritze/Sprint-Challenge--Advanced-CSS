@@ -165,7 +165,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 10rem;
+  height: 11rem;
+  padding: 0%;
   position: fixed;
   top: 0;
   background-color: whitesmoke;
@@ -182,21 +183,21 @@ p {
   justify-content: center;
 }
 .navigation nav a {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  color: gray;
+  color: black;
   padding: 1.5rem;
 }
-.navigation nav a:hover {
+.navigation nav a a:hover {
   color: black;
   font-weight: bolder;
 }
 @media (max-width: 500px) {
-  .navigation h1 {
-    font-size: 3rem;
+  .navigation nav h1 {
+    font-size: 4rem;
     text-align: center;
   }
-  .navigation nav {
+  .navigation nav nav {
     flex-wrap: nowrap;
   }
 }
@@ -263,6 +264,7 @@ footer {
   background-color: #23293B;
   font-size: 1.5rem;
   color: white;
+  /****button mixin*/
 }
 .home .walk .walk-text .btn:hover {
   background-color: #505e87;
@@ -277,55 +279,7 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-.home .sign-up-form {
-  width: 100%;
-  margin: 0 5rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-.home .sign-up-form input[type="text"] {
-  width: 200px;
-  height: 30px;
-  border-radius: 10px;
-  background-color: #f8f8f8;
-  border: 2px solid #ccc;
-  outline: none;
-  font-size: 15px;
-}
-.home .sign-up-form #message {
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  background-color: #f8f8f8;
-  outline: none;
-  resize: none;
-  font-size: 15px;
-}
-.home .sign-up-form #question {
-  width: 200px;
-  border-radius: 10px;
-  background-color: #f8f8f8;
-  border: 2px solid #ccc;
-  outline: none;
-  cursor: pointer;
-  font-size: 15px;
-  color: gray;
-}
-.home .sign-up-form input[type="submit"] {
-  border-radius: 10px;
-  background-color: #eeffe6;
-  border: 2px solid #ccc;
-  padding: 7px 30px;
-  font-size: 15px;
-}
-.home .sign-up-form input[type="submit"]:hover {
-  background-color: #d6e6cf;
-  border: 2px solid #ccc;
-  cursor: pointer;
-}
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .home .intro h2 {
     padding: 15px;
   }
@@ -335,14 +289,14 @@ footer {
     font-size: 1.4rem;
   }
   .home .intro img {
-    text-align: center;
     width: 100%;
     border-radius: 0.5rem;
   }
   .home .space-images {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
   }
   .home .space-images img {
@@ -352,13 +306,15 @@ footer {
     height: 100%;
   }
   .home .space-images .blast {
-    padding: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .home .space-images .sky {
-    padding: 1.2rem;
+    display: none;
   }
   .home .space-images .launch {
-    padding: 1.2rem;
+    display: none;
   }
   .home .visit-planets {
     padding: 0px;
@@ -408,16 +364,15 @@ footer {
   }
   .home .walk .walk-img {
     width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
+    margin-left: 0%;
   }
   .home .walk .walk-img img {
-    width: 40%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px) and (max-width: 500px) {
   .home .intro h2 {
     padding: 15px;
   }
@@ -432,25 +387,26 @@ footer {
     border-radius: 0.5rem;
   }
   .home .space-images {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
   }
   .home .space-images img {
     width: 28%;
-    margin: 20px 2.5%;
+    margin: 0 auto;
+    padding: 2%;
     border-radius: 20px;
     height: 100%;
   }
   .home .space-images .blast {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .home .space-images .sky {
     display: none;
   }
   .home .space-images .launch {
     display: none;
+    /***************hide pic ****************/
   }
   .home .visit-planets {
     padding: 0px;
