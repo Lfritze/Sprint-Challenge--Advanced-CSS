@@ -168,7 +168,7 @@ p {
   height: 10rem;
   position: fixed;
   width: 100%;
-  background-color: #f0f8ff;
+  background-color: whitesmoke;
   opacity: 0.95;
 }
 .navigation h1 {
@@ -198,6 +198,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 0rem;
 }
 .home .intro h2 {
   padding: 15px;
