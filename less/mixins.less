@@ -1,8 +1,14 @@
 // Mixins Here
-.buttonmixin(@bcolor, @fonter, @textcol) {
+
+// Breakpoints
+@phone: ~'(max-width: 500px)';
+
+// Button
+.buttonmixin(@bcolor, @fonter, @tcolor) {
     text-align: center;
+    padding: 1.0rem 0.5rem;
     border-radius: 0.6rem;
-    background: @bcolor;
+    background-color: @bcolor;
     font-size: @fonter;
-    color: @textcol;
+    color: @tcolor;
 }
